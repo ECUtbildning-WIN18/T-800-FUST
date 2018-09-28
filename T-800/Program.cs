@@ -6,8 +6,10 @@ namespace T_800
     {
         static void Main(string[] args)
         {
-            var menu = new Menu();
-            menu.PrintMenu();
+            var t800 = new Machine("T800");
+
+            t800.ActivateMachine(true);
+            t800.DeactivateMachine(true);
         }
     }
 }
