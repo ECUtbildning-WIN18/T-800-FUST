@@ -14,6 +14,7 @@ namespace T_800
         
         public void ActivateMachine(bool activate)
         {
+          
             if (activate)
             {
                 activated = true;
@@ -27,6 +28,7 @@ namespace T_800
         
         public void DeactivateMachine(bool deactivate)
         {
+
             if (deactivate)
             {
                 activated = false;

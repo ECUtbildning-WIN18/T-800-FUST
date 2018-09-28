@@ -32,7 +32,7 @@ namespace T_800.Domain
 
             if (FriendlyTarget)
             {
-                //Move firendly target to saved list
+                //Move friendly target to saved list
             }
             else
             {
