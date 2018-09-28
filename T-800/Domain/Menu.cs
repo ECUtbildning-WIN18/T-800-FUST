@@ -19,6 +19,7 @@ namespace T_800
                 Console.WriteLine("\t[3]");
                 Console.WriteLine("\t[4]Quit");
 
+<<<<<<< HEAD
                 string menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
@@ -52,6 +53,41 @@ namespace T_800
                         }
                         break;
                     }
+=======
+                string menuChoise = Console.ReadLine();
+
+                switch (menuChoise)
+                {
+                    case "1":
+                        {
+                            Console.Clear();
+                            break;
+                        }
+                    case "2":
+                        {
+                            Console.Clear();
+                            break;
+                        }
+                    case "3":
+                        {
+                            Console.Clear();
+                            break;
+                        }
+                    case "4":
+                        {
+                            Console.Clear();
+                            Console.Write("\tDo you want to quit? Y/N: ");
+                            string quit = Console.ReadLine();
+                            if (quit == "Y" || quit == "y")
+                            {
+                                menu = false;
+                            }
+                            else
+                            {
+                            }
+                            break;
+                        }
+>>>>>>> origin
 
                     default:
                         Console.WriteLine("\tChoose a number between 1-4");
