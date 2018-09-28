@@ -23,20 +23,20 @@ namespace T_800.Domain
         {
             if (EnemyTarget)
             {
-                //Delete target from target list
+                //Engage target if possible
             }
             else
             {
-                //Return to menu
+                //Return to home base for further instructions
             }
 
             if (FriendlyTarget)
             {
-                //Move friendly target to saved list
+                //Make contact with friendly target
             }
             else
             {
-                //Report status on friendly target
+                //Keep searching for friendly target
             }
         }
     }
