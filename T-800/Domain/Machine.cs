@@ -6,10 +6,12 @@ namespace T_800
     public class Machine
     {
         public string Name { get; set; }
+        public bool Activated { get; set; }
         
         public Machine(string name)
         {
             Name = name;
+            Activated = false;
         }
         
         public void ActivateMachine(bool activate)
@@ -17,7 +19,7 @@ namespace T_800
           
             if (activate)
             {
-                activated = true;
+                Activated = true;
                 Console.WriteLine(Name + " has been activated!");
             }
             else
@@ -31,7 +33,7 @@ namespace T_800
 
             if (deactivate)
             {
-                activated = false;
+                Activated = false;
                 Console.WriteLine(Name + " has been put into maintenance mode");
             }
             else
@@ -39,12 +41,5 @@ namespace T_800
                 Console.WriteLine( "something went wrong while trying to deactivate");
             }
         }
-
-        private void AcquireTargets()
-        {
-            
-        }
-        
-        private bool activated = false;
     }
 }
