@@ -10,9 +10,6 @@ namespace T_800
 
             t800.ActivateMachine(true);
             t800.DeactivateMachine(true);
-            
-            
-            
         }
     }
 }

@@ -14,7 +14,7 @@ namespace T_800
         
         public void ActivateMachine(bool activate)
         {
-            if (activate = true)
+            if (activate == true)
             {
                 activated = true;
                 Console.WriteLine(Name + " has been activated!");
@@ -28,7 +28,7 @@ namespace T_800
         
         public void DeactivateMachine(bool deactivate)
         {
-            if (deactivate = true)
+            if (deactivate == true)
             {
                 activated = false;
                 Console.WriteLine(Name + " has been put into maintenance mode");
