@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace T_800
 {
@@ -6,7 +7,6 @@ namespace T_800
     {
         public string Name { get; set; }
         
-
         public Machine(string name)
         {
             Name = name;
@@ -14,7 +14,7 @@ namespace T_800
         
         public void ActivateMachine(bool activate)
         {
-            if (activate = true)
+            if (activate)
             {
                 activated = true;
                 Console.WriteLine(Name + " has been activated!");
@@ -23,12 +23,11 @@ namespace T_800
             {
                 Console.WriteLine( "something when wrong while trying to activate");
             }
-            
         }
         
         public void DeactivateMachine(bool deactivate)
         {
-            if (deactivate = true)
+            if (deactivate)
             {
                 activated = false;
                 Console.WriteLine(Name + " has been put into maintenance mode");
@@ -37,6 +36,11 @@ namespace T_800
             {
                 Console.WriteLine( "something when wrong while trying to deactivate");
             }
+        }
+
+        private void AcquireTargets()
+        {
+            
         }
         
         private bool activated = false;
