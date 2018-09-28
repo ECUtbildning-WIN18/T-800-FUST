@@ -19,9 +19,9 @@ namespace T_800
                 Console.WriteLine("\t[3]");
                 Console.WriteLine("\t[4]Quit");
 
-                string menuChoise = Console.ReadLine();
+                string menuChoice = Console.ReadLine();
 
-                switch (menuChoise)
+                switch (menuChoice)
                 {
                     case "1":
                         {
