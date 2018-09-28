@@ -21,7 +21,7 @@ namespace T_800.Domain
 
         public void Target()
         {
-            if (EnemyTarget == true)
+            if (EnemyTarget)
             {
                 //Delete target from target list
             }
@@ -30,7 +30,7 @@ namespace T_800.Domain
                 //Return to menu
             }
 
-            if (FriendlyTarget == true)
+            if (FriendlyTarget)
             {
                 //Move firendly target to saved list
             }

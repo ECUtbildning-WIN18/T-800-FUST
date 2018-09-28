@@ -21,7 +21,7 @@ namespace T_800
             }
             else
             {
-                Console.WriteLine( "something when wrong while trying to activate");
+                Console.WriteLine( "something went wrong while trying to activate");
             }
         }
         
@@ -34,7 +34,7 @@ namespace T_800
             }
             else
             {
-                Console.WriteLine( "something when wrong while trying to deactivate");
+                Console.WriteLine( "something went wrong while trying to deactivate");
             }
         }
 
