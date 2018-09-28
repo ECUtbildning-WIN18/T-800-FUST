@@ -24,35 +24,34 @@ namespace T_800
                 switch (menuChoice)
                 {
                     case "1":
-                        {
-                            Console.Clear();
-                            break;
-                        }
+                    {
+                        Console.Clear();
+                        break;
+                    }
                     case "2":
-                        {
-                            Console.Clear();
-                            break;
-                        }
+                    {
+                        Console.Clear();
+                        break;
+                    }
                     case "3":
-                        {
-                            Console.Clear();
-                            break;
-                        }
+                    {
+                        Console.Clear();
+                        break;
+                    }
                     case "4":
+                    {
+                        Console.Clear();
+                        Console.Write("\tDo you want to quit? Y/N: ");
+                        string quit = Console.ReadLine();
+                        if (quit == "Y" || quit == "y")
                         {
-                            Console.Clear();
-                            Console.Write("\tDo you want to quit? Y/N: ");
-                            string quit = Console.ReadLine();
-                            if (quit == "Y" || quit == "y")
-                            {
-                                menu = false;
-                            }
-                            else
-                            {
-                            }
-                            break;
+                            menu = false;
                         }
-
+                        else
+                        {
+                        }
+                        break;
+                    }
                     default:
                         Console.WriteLine("\tChoose a number between 1-4");
                         break;
