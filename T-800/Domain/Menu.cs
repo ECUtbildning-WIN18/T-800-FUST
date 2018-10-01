@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using T_800.Domain;
 
 namespace T_800
 {
     class Menu
     {
-        public void PrintMenu()
+        public static void PrintMenu()
         {
             bool menu = true;
             while (menu)
@@ -16,7 +14,7 @@ namespace T_800
                 Console.WriteLine("\t=====Welcome to Slynet 1.7=====");
                 Console.WriteLine("\n\tPlease choose your option below.");
                 Console.WriteLine("\t[1]Select Terminator");
-                Console.WriteLine("\t[2]Selfdestruct Terminators");
+                Console.WriteLine("\t[2]Self-destruct Terminators");
                 Console.WriteLine("\t[3]Set Mission");
                 Console.WriteLine("\t[4]Quit");
 
@@ -34,23 +32,19 @@ namespace T_800
 
                             if (select == "1")
                             {
-                                var machineMenu = new MachineMenu();
-                                machineMenu.Menu(1);
+                                MachineMenu.Menu(1);
                             }
                             if (select == "2")
                             {
-                                var machineMenu = new MachineMenu();
-                                machineMenu.Menu(2);
+                                MachineMenu.Menu(2);
                             }
                             if (select == "3")
                             {
-                                var machineMenu = new MachineMenu();
-                                machineMenu.Menu(3);
+                                MachineMenu.Menu(3);
                             }
                             if (select == "4")
                             {
-                                var machineMenu = new MachineMenu();
-                                machineMenu.Menu(4);
+                                MachineMenu.Menu(4);
                             }
                             Console.Clear();
                             break;

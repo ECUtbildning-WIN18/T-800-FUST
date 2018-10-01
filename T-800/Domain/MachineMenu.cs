@@ -6,7 +6,7 @@ namespace T_800.Domain
 {
     class MachineMenu
     {
-        public void Menu(int selected)
+        public static void Menu(int selected)
         {
             var machineList = new MachineList();
             bool menu = true;
