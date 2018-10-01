@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using T_800.Domain;
 
 namespace T_800
 {
@@ -7,11 +8,18 @@ namespace T_800
     {
         public string Name { get; set; }
         public bool Activated { get; set; }
+        private MachineMenu Menu = new MachineMenu();
+        
         
         public Machine(string name)
         {
             Name = name;
-            Activated = false;
+            Activated = false;;
+        }
+
+        public void GetMenu()
+        {
+           Menu.Menu();
         }
         
         public void ActivateMachine(bool activate)
