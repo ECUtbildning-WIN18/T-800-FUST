@@ -23,21 +23,14 @@ namespace T_800.Domain
         {
             if (EnemyTarget)
             {
-                //Engage target if possible
+                Console.WriteLine("Eliminating the enemy target"); //Engage target if possible
             }
             else
             {
-                //Return to home base for further instructions
+                Console.WriteLine("Awaiting further instructions");//Return to home base for further instructions
             }
 
-            if (FriendlyTarget)
-            {
-                //Make contact with friendly target
-            }
-            else
-            {
-                //Keep searching for friendly target
-            }
+          
         }
     }
 }
