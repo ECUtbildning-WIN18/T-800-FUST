@@ -7,13 +7,15 @@ namespace T_800
     public class Machine
     {
         public string Name { get; set; }
+        public string SerialNumber { get; set; }
         public bool Activated { get; set; }
         private MachineMenu Menu = new MachineMenu();
         
         
-        public Machine(string name)
+        public Machine(string name, string serialNumber)
         {
             Name = name;
+            SerialNumber = serialNumber;
             Activated = false;;
         }
 
