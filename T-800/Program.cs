@@ -6,7 +6,9 @@ namespace T_800
     {
         static void Main(string[] args)
         {
-            Menu.PrintMenu();
+            var menu = new Menu();
+            menu.PrintMenu();
+            
         }
     }
 }
