@@ -20,10 +20,10 @@ namespace T_800
         }
 
 
-        public void GetMenu()
-        {
-           Menu.Menu();
-        }
+        //public void GetMenu()
+        //{
+        //   Menu.Menu();
+        //}
         
         public void ActivateMachine(bool activate)
         {

@@ -6,12 +6,14 @@ namespace T_800.Domain
 {
     class MachineMenu
     {
-        public void Menu()
+        public void Menu(int selected)
         {
+            var machineList = new MachineList();
             bool menu = true;
             while (menu)
             {
-                Console.WriteLine("Welcome to robot" + " " + "**Lägg till namn här**");//Lägg till namn från Machine listan
+                Console.WriteLine("Welcome to robot" + " " + machineList.machines[selected-1].Name
+                    );//Lägg till namn från Machine listan
                 Console.WriteLine("\n[1]Select your mission");
                 Console.WriteLine("[2]");
                 Console.WriteLine("[3]Exit Machine");
@@ -100,6 +102,7 @@ namespace T_800.Domain
                             if (exit == "Y" || exit == "y")
                             {
                                 Console.WriteLine("Goodbye");
+                                menu = false;
                                 break;
                             }
                             break;

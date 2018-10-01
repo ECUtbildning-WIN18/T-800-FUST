@@ -31,11 +31,27 @@ namespace T_800
                             machines.ListMachine();
                             Console.WriteLine("\n\tActivate Terminator: ");
                             string select = Console.ReadLine();
+
                             if (select == "1")
                             {
-                                
+                                var machineMenu = new MachineMenu();
+                                machineMenu.Menu(1);
                             }
-                            Console.ReadLine();
+                            if (select == "2")
+                            {
+                                var machineMenu = new MachineMenu();
+                                machineMenu.Menu(2);
+                            }
+                            if (select == "3")
+                            {
+                                var machineMenu = new MachineMenu();
+                                machineMenu.Menu(3);
+                            }
+                            if (select == "4")
+                            {
+                                var machineMenu = new MachineMenu();
+                                machineMenu.Menu(4);
+                            }
                             Console.Clear();
                             break;
                         }
