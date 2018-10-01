@@ -8,6 +8,7 @@ namespace T_800
         {
             var menu = new Menu();
             menu.PrintMenu();
+            
         }
     }
 }
