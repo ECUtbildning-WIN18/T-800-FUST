@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using T_800.Domain;
 
 namespace T_800
 {
@@ -25,8 +26,16 @@ namespace T_800
                 {
                     case "1":
                         {
+                            var machines = new MachineList();
                             Console.WriteLine("\tPlease select Terminator");
-                            //Lista maskiner här
+                            machines.ListMachine();
+                            Console.WriteLine("\n\tActivate Terminator: ");
+                            string select = Console.ReadLine();
+                            if (select == "1")
+                            {
+                                
+                            }
+                            Console.ReadLine();
                             Console.Clear();
                             break;
                         }
