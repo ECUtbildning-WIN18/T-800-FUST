@@ -30,6 +30,7 @@ namespace T_800.Domain
                             Console.WriteLine("\tSelect Mission");
                             Console.WriteLine("\t[1]Eliminate target");
                             Console.WriteLine("\t[2]Save target");
+                            Console.WriteLine("\t[3]Quit");
                             string missionSelect = Console.ReadLine();
                             switch (missionSelect)
                             {
