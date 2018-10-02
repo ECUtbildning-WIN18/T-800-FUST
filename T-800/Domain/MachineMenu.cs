@@ -27,19 +27,9 @@ namespace T_800.Domain
                             bool missionMenu = true;
                             while (missionMenu)
 
-<<<<<<< HEAD
-                                Console.WriteLine("\tSelect Mission");
-                            Console.WriteLine("\t[1]Kill!!!");
-                            Console.WriteLine("\t[2]Save Target");
-                            Console.WriteLine("\t[3]Quit");
-<<<<<<< HEAD
-=======
                             Console.WriteLine("\tSelect Mission");
                             Console.WriteLine("\t[1]Eliminate target");
                             Console.WriteLine("\t[2]Save target");
->>>>>>> 774f4e005b4432e02f5318a7abd4ff693c819167
-=======
->>>>>>> JoakimPersson
                             string missionSelect = Console.ReadLine();
                             switch (missionSelect)
                             {
@@ -74,7 +64,7 @@ namespace T_800.Domain
                                         Console.WriteLine("\tWho do you want to save?:");
                                         Console.WriteLine("\t[1]Sarah Connor");
                                         Console.WriteLine("\t[2]John Connor");
-                                        Console.WriteLine("\t[3]Snubben på ica");
+                                        Console.WriteLine("\t[3]Lasse på ica");
                                         string save = Console.ReadLine();
                                         if (save == "1")
                                         {
@@ -86,7 +76,7 @@ namespace T_800.Domain
                                         }
                                         if (save == "3")
                                         {
-                                            Console.WriteLine("Attempting to save the innocent civilian");
+                                            Console.WriteLine("Attempting to save Lasse");
                                         }
                                         else
                                         {
