@@ -17,7 +17,6 @@ namespace T_800.Domain
                 Console.WriteLine("\t[1]Select your mission");
                 Console.WriteLine("\t[2]Self-destruct");
                 Console.WriteLine("\t[3]Exit Machine");
-
                 string menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
@@ -59,7 +58,6 @@ namespace T_800.Domain
                                             else
                                             {
                                                 Console.WriteLine("Please select targets 1-3");
-                                                break;
                                             }
                                             break;
                                         }
@@ -98,6 +96,7 @@ namespace T_800.Domain
                                         Console.WriteLine("\t[3]Coffee with milk");
                                         Console.WriteLine("\t[4]Coffee with sugar and milk");
                                         string save = Console.ReadLine();
+
                                         if (save == "1")
                                         {
                                             Console.WriteLine("Regular Coffee coming up!");
@@ -138,7 +137,6 @@ namespace T_800.Domain
                             }
                             break;
                         }
-
                     case "2":
                         {                           
                             Console.Clear();                            

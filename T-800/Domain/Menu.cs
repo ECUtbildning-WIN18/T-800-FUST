@@ -8,7 +8,6 @@ namespace T_800
         public static void PrintMenu()
         {
             var machines = new MachineList();
-
             bool menu = true;
             while (menu)
             {
@@ -19,7 +18,6 @@ namespace T_800
                 Console.WriteLine("\t[2]Self-destruct Terminators");
                 Console.WriteLine("\t[3]Set Mission");
                 Console.WriteLine("\t[4]Quit");
-
                 string menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
@@ -79,7 +77,6 @@ namespace T_800
                         }
                     case "3":
                         {
-                           
                             Console.Clear();
                             break;
                         }
