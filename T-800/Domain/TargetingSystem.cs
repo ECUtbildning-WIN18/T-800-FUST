@@ -29,8 +29,18 @@ namespace T_800.Domain
             {
                 Console.WriteLine("Awaiting further instructions");//Return to home base for further instructions
             }
+        }
 
-          
+        public void Rescue()
+        {
+            if (FriendlyTarget)
+            {
+                Console.WriteLine("Approaching friendly, attempting rescue.");
+            }
+            else
+            {
+                Console.WriteLine("Keep searching for friendly target.");
+            }
         }
     }
 }
