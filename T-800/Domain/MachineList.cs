@@ -21,5 +21,10 @@ namespace T_800.Domain
                 Console.WriteLine($"[{i+1}]{machines[i].Name} {machines[i].SerialNumber} Activated: {machines[i].Activated}");
             }
         }
+
+        public void RemoveMachine(int input)
+        {
+            machines.RemoveAt(input);
+        }
     }
 }

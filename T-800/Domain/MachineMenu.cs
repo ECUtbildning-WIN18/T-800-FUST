@@ -140,9 +140,20 @@ namespace T_800.Domain
                         }
 
                     case "2":
-                        {
+                        {                           
+                            Console.Clear();                            
+                            Console.WriteLine("Are you sure? Y/N");
+                            string userInput = Console.ReadLine();
+
+                            if (userInput == "Y" || userInput == "y")
+                            {
+                                machineList.RemoveMachine(this);
+                            }
+                            else
+                            {
+                            }                                                                                                                    
                             Console.Clear();
-                            break;
+                            break;                            
                         }
                     case "3":
                         {

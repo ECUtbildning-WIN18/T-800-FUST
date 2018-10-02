@@ -53,7 +53,29 @@ namespace T_800
                     case "2":
                         {
                             Console.Clear();
-                            break;
+                            var machines = new MachineList();
+                            Console.WriteLine("\tPlease select Terminator");
+                            machines.ListMachine();
+                            string select = Console.ReadLine();
+
+                            if (select == "1")
+                            {
+                                machines.RemoveMachine(0);
+                            }
+                            if (select == "2")
+                            {
+                                MachineMenu.Menu(2);
+                            }
+                            if (select == "3")
+                            {
+                                MachineMenu.Menu(3);
+                            }
+                            if (select == "4")
+                            {
+                                MachineMenu.Menu(4);
+                            }
+                            Console.Clear();
+                            break;                            
                         }
                     case "3":
                         {
