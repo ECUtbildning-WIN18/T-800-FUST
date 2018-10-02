@@ -6,7 +6,7 @@ namespace T_800.Domain
 {
     class MachineMenu
     {
-        public void Menu(int selected)
+        public static void Menu(int selected)
         {
             var machineList = new MachineList();
             bool menu = true;
@@ -27,10 +27,16 @@ namespace T_800.Domain
                             bool missionMenu = true;
                             while (missionMenu)
 
+<<<<<<< HEAD
                                 Console.WriteLine("\tSelect Mission");
                             Console.WriteLine("\t[1]Kill!!!");
                             Console.WriteLine("\t[2]Save Target");
                             Console.WriteLine("\t[3]Quit");
+=======
+                            Console.WriteLine("\tSelect Mission");
+                            Console.WriteLine("\t[1]Eliminate target");
+                            Console.WriteLine("\t[2]Save target");
+>>>>>>> 774f4e005b4432e02f5318a7abd4ff693c819167
                             string missionSelect = Console.ReadLine();
                             switch (missionSelect)
                             {
@@ -38,20 +44,20 @@ namespace T_800.Domain
                                     {
                                         Console.WriteLine("\tSelect your target:");
                                         Console.WriteLine("\t[1]Sarah Connor");
-                                        Console.WriteLine("\t[2]Joahn Connor");
-                                        Console.WriteLine("\t[3]Snubben på ica");
+                                        Console.WriteLine("\t[2]John Connor");
+                                        Console.WriteLine("\t[3]Innocent civilian");
                                         string target = Console.ReadLine();
                                         if (target == "1")
                                         {
-                                            Console.WriteLine("Sarah Connor is goning die!");
+                                            Console.WriteLine("Target aquired, advancing on Sarah Connor.");
                                         }
                                         if (target == "2")
                                         {
-                                            Console.WriteLine("John Connor is going to die!");
+                                            Console.WriteLine("Target aquired, advancing on John Connor.");
                                         }
                                         if (target == "3")
                                         {
-                                            Console.WriteLine("Noo! not Snubben på ica, I like him");
+                                            Console.WriteLine("Harming innocent civilians is prohibited.");
                                         }
                                         else
                                         {
@@ -64,20 +70,20 @@ namespace T_800.Domain
                                     {
                                         Console.WriteLine("\tWho do you want to save?:");
                                         Console.WriteLine("\t[1]Sarah Connor");
-                                        Console.WriteLine("\t[2]Joahn Connor");
+                                        Console.WriteLine("\t[2]John Connor");
                                         Console.WriteLine("\t[3]Snubben på ica");
                                         string save = Console.ReadLine();
                                         if (save == "1")
                                         {
-                                            Console.WriteLine("Sarah Connor is goning die!");
+                                            Console.WriteLine("Target aquired, attempting to save Sarah Connor");
                                         }
                                         if (save == "2")
                                         {
-                                            Console.WriteLine("John Connor is going to die!");
+                                            Console.WriteLine("Target aquired, attempting to save John Connor");
                                         }
                                         if (save == "3")
                                         {
-                                            Console.WriteLine("Noo! not Snubben på ica, I like him");
+                                            Console.WriteLine("Attempting to save the innocent civilian");
                                         }
                                         else
                                         {
