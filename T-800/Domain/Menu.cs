@@ -24,6 +24,7 @@ namespace T_800
                 {
                     case "1":
                         {
+                            Console.Clear();
                             var machines = new MachineList();
                             Console.WriteLine("\tPlease select Terminator");
                             machines.ListMachine();
