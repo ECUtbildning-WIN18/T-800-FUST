@@ -30,6 +30,7 @@ namespace T_800.Domain
                                 Console.WriteLine("\tSelect Mission");
                             Console.WriteLine("\t[1]Kill!!!");
                             Console.WriteLine("\t[2]Save Target");
+                            Console.WriteLine("\t[3]Quit");
                             string missionSelect = Console.ReadLine();
                             switch (missionSelect)
                             {
@@ -83,6 +84,11 @@ namespace T_800.Domain
                                             Console.WriteLine("Please select targets 1-3");
                                             break;
                                         }
+                                        break;
+                                    }
+                                case "3":
+                                    {
+                                        missionMenu = false;
                                         break;
                                     }
                                 default:
