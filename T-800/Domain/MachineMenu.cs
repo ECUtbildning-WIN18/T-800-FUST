@@ -32,11 +32,14 @@ namespace T_800.Domain
                             Console.WriteLine("\t[1]Kill!!!");
                             Console.WriteLine("\t[2]Save Target");
                             Console.WriteLine("\t[3]Quit");
+<<<<<<< HEAD
 =======
                             Console.WriteLine("\tSelect Mission");
                             Console.WriteLine("\t[1]Eliminate target");
                             Console.WriteLine("\t[2]Save target");
 >>>>>>> 774f4e005b4432e02f5318a7abd4ff693c819167
+=======
+>>>>>>> JoakimPersson
                             string missionSelect = Console.ReadLine();
                             switch (missionSelect)
                             {
