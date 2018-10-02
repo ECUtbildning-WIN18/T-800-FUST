@@ -12,10 +12,10 @@ namespace T_800.Domain
             bool menu = true;
             while (menu)
             {
-                Console.WriteLine("Welcome to robot" + " " + machineList.machines[selected - 1].Name);//Lägg till namn från Machine listan
-                Console.WriteLine("\n[1]Select your mission");
-                Console.WriteLine("[2]");
-                Console.WriteLine("[3]Exit Machine");
+                Console.WriteLine("Welcome to robot" + " " + machineList.machines[selected - 1].Name + " " + machineList.machines[selected -1].SerialNumber);//Lägg till namn från Machine listan
+                Console.WriteLine("\t[1]Select your mission");
+                Console.WriteLine("\t[2]");
+                Console.WriteLine("\t[3]Exit Machine");
 
                 string menuChoice = Console.ReadLine();
 
@@ -29,7 +29,8 @@ namespace T_800.Domain
                                 Console.WriteLine("\tSelect Mission");
                                 Console.WriteLine("\t[1]Eliminate target");
                                 Console.WriteLine("\t[2]Save target");
-                                Console.WriteLine("\t[3]Quit");
+                                Console.WriteLine("\t[3]Make Coffee");
+                                Console.WriteLine("\t[4]Quit");
                                 string missionSelect = Console.ReadLine();
                                 switch (missionSelect)
                                 {
@@ -86,12 +87,41 @@ namespace T_800.Domain
                                             break;
                                         }
                                     case "3":
+                                    {
+                                        Console.WriteLine("\tHow do you want your coffee?:");
+                                        Console.WriteLine("\t[1]Regular Coffee");
+                                        Console.WriteLine("\t[2]Coffee with sugar");
+                                        Console.WriteLine("\t[3]Coffee with milk");
+                                        Console.WriteLine("\t[4]Coffee with sugar and milk");
+                                        string save = Console.ReadLine();
+                                        if (save == "1")
                                         {
-                                            missionMenu = false;
+                                            Console.WriteLine("Regular Coffee coming up!");
+                                        }
+                                        if (save == "2")
+                                        {
+                                            Console.WriteLine("Coffee with sugar coming up!");
+                                        }
+                                        if (save == "3")
+                                        {
+                                            Console.WriteLine("Coffee with milk coming up!");
+                                        }
+                                        if (save == "4")
+                                        {
+                                            Console.WriteLine("Coffee with milk and sugar coming up!");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Please select targets 1-4");
                                             break;
                                         }
-                                    default:
+                                            break;
+                                    }
+                                    case "4":
+                                    {
+                                        missionMenu = false;
                                         break;
+                                    }
                                 }
                             }
                             break;
