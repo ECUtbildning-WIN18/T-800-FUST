@@ -6,9 +6,9 @@ namespace T_800.Domain
 {
     class MachineMenu
     {
-        public static void Menu(int selected)
+        public static void Menu(int selected, MachineList machineList)
         {
-            var machineList = new MachineList();
+            // var machineList = new MachineList();
             bool menu = true;
             while (menu)
             {
@@ -147,7 +147,7 @@ namespace T_800.Domain
 
                             if (userInput == "Y" || userInput == "y")
                             {
-                                machineList.RemoveMachine(this);
+                                machineList.machines.RemoveAt(selected - 1);
                             }
                             else
                             {

@@ -7,6 +7,8 @@ namespace T_800
     {
         public static void PrintMenu()
         {
+            var machines = new MachineList();
+
             bool menu = true;
             while (menu)
             {
@@ -25,7 +27,6 @@ namespace T_800
                     case "1":
                         {
                             Console.Clear();
-                            var machines = new MachineList();
                             Console.WriteLine("\tPlease select Terminator");
                             machines.ListMachine();
                             Console.WriteLine("\n\tActivate Terminator: ");
@@ -33,19 +34,19 @@ namespace T_800
 
                             if (select == "1")
                             {
-                                MachineMenu.Menu(1);
+                                MachineMenu.Menu(1, machines);
                             }
                             if (select == "2")
                             {
-                                MachineMenu.Menu(2);
+                                MachineMenu.Menu(2, machines);
                             }
                             if (select == "3")
                             {
-                                MachineMenu.Menu(3);
+                                MachineMenu.Menu(3, machines);
                             }
                             if (select == "4")
                             {
-                                MachineMenu.Menu(4);
+                                MachineMenu.Menu(4, machines);
                             }
                             Console.Clear();
                             break;
@@ -53,7 +54,6 @@ namespace T_800
                     case "2":
                         {
                             Console.Clear();
-                            var machines = new MachineList();
                             Console.WriteLine("\tPlease select Terminator");
                             machines.ListMachine();
                             string select = Console.ReadLine();
@@ -64,15 +64,15 @@ namespace T_800
                             }
                             if (select == "2")
                             {
-                                MachineMenu.Menu(2);
+                                MachineMenu.Menu(2, machines);
                             }
                             if (select == "3")
                             {
-                                MachineMenu.Menu(3);
+                                MachineMenu.Menu(3, machines);
                             }
                             if (select == "4")
                             {
-                                MachineMenu.Menu(4);
+                                MachineMenu.Menu(4, machines);
                             }
                             Console.Clear();
                             break;                            
