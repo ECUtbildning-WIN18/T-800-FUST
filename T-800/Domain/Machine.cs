@@ -11,23 +11,15 @@ namespace T_800
         public bool Activated { get; set; }
         private MachineMenu Menu = new MachineMenu();
         
-        
         public Machine(string name, string serialNumber)
         {
             Name = name;
             SerialNumber = serialNumber;
             Activated = false;
         }
-
-
-        //public void GetMenu()
-        //{
-        //   Menu.Menu();
-        //}
         
         public void ActivateMachine(bool activate)
         {
-          
             if (activate)
             {
                 Activated = true;
@@ -38,7 +30,5 @@ namespace T_800
                 Console.WriteLine( "something went wrong while trying to activate");
             }
         }
-        
-        
     }
 }

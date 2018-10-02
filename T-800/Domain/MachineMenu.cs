@@ -12,8 +12,7 @@ namespace T_800.Domain
             bool menu = true;
             while (menu)
             {
-                Console.WriteLine("Welcome to robot" + " " + machineList.machines[selected-1].Name
-                    );//Lägg till namn från Machine listan
+                Console.WriteLine("Welcome to robot" + " " + machineList.machines[selected - 1].Name);//Lägg till namn från Machine listan
                 Console.WriteLine("\n[1]Select your mission");
                 Console.WriteLine("[2]");
                 Console.WriteLine("[3]Exit Machine");
@@ -26,12 +25,12 @@ namespace T_800.Domain
                         {
                             bool missionMenu = true;
                             while (missionMenu)
-                            { 
-                            Console.WriteLine("\tSelect Mission");
-                            Console.WriteLine("\t[1]Eliminate target");
-                            Console.WriteLine("\t[2]Save target");
-                            Console.WriteLine("\t[3]Quit");
-                            string missionSelect = Console.ReadLine();
+                            {
+                                Console.WriteLine("\tSelect Mission");
+                                Console.WriteLine("\t[1]Eliminate target");
+                                Console.WriteLine("\t[2]Save target");
+                                Console.WriteLine("\t[3]Quit");
+                                string missionSelect = Console.ReadLine();
                                 switch (missionSelect)
                                 {
                                     case "1":
