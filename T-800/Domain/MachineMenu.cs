@@ -146,10 +146,7 @@ namespace T_800.Domain
                             if (userInput == "Y" || userInput == "y")
                             {
                                 machineList.machines.RemoveAt(selected - 1);
-                            }
-                            else
-                            {                                
-                            }                             
+                            }                           
                             Console.Clear();
                             menu = false;
                             break;                            
@@ -163,7 +160,6 @@ namespace T_800.Domain
                             {
                                 Console.WriteLine("Goodbye");
                                 menu = false;
-                                break;
                             }
                             break;
                         }
