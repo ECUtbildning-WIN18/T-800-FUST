@@ -15,9 +15,8 @@ namespace T_800
                 Console.WriteLine("\t=====Welcome to Slynet 1.7=====");
                 Console.WriteLine("\n\tPlease choose your option below.");
                 Console.WriteLine("\t[1]Select Terminator");
-                Console.WriteLine("\t[2]Self-destruct Terminators");
-                Console.WriteLine("\t[3]Set Mission");
-                Console.WriteLine("\t[4]Quit");
+                Console.WriteLine("\t[2]Set Mission");
+                Console.WriteLine("\t[3]Quit");
                 string menuChoice = Console.ReadLine();
 
                 switch (menuChoice)
@@ -58,7 +57,7 @@ namespace T_800
 
                             if (select == "1")
                             {
-                                machines.RemoveMachine(0);
+                                MachineMenu.Menu(1, machines);
                             }
                             if (select == "2")
                             {
@@ -78,19 +77,11 @@ namespace T_800
                     case "3":
                         {
                             Console.Clear();
-                            break;
-                        }
-                    case "4":
-                        {
-                            Console.Clear();
                             Console.Write("\tDo you want to quit? Y/N: ");
                             string quit = Console.ReadLine();
                             if (quit == "Y" || quit == "y")
                             {
                                 menu = false;
-                            }
-                            else
-                            {
                             }
                             break;
                         }
