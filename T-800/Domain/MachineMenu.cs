@@ -9,11 +9,12 @@ namespace T_800.Domain
         public static void Menu(int selected, MachineList machineList)
         {
             // var machineList = new MachineList();
+            Machine selectedMachine = machineList.machines[selected - 1];
             bool menu = true;
             while (menu)
             {
                 Console.Clear();
-                Console.WriteLine("Welcome to robot: " + machineList.machines[selected - 1].Name + ". Serial Number: " + machineList.machines[selected -1].SerialNumber);//Lägg till namn från Machine listan
+                Console.WriteLine("Welcome to robot: " + selectedMachine.Name + ". Serial Number: " + selectedMachine.SerialNumber);//Lägg till namn från Machine listan
                 Console.WriteLine("\t[1]Select your mission");
                 Console.WriteLine("\t[2]Self-destruct");
                 Console.WriteLine("\t[3]Exit Machine");
@@ -25,17 +26,37 @@ namespace T_800.Domain
                         {
                             bool missionMenu = true;
                             while (missionMenu)
+                                
+                            if (!selectedMachine.Activated)
                             {
                                 Console.Clear();
-                                Console.WriteLine("\tSelect Mission");
-                                Console.WriteLine("\t[1]Eliminate target");
-                                Console.WriteLine("\t[2]Save target");
-                                Console.WriteLine("\t[3]Make Coffee");
-                                Console.WriteLine("\t[4]Quit");
-                                string missionSelect = Console.ReadLine();
-                                switch (missionSelect)
+                                Console.WriteLine($"{selectedMachine.Name} is not activated");
+                                Console.WriteLine($"Do you wish to activate it? (y = yes) (n = no)");
+                                string choice = Console.ReadLine().ToLower();
+                                if (choice == "y")
                                 {
-                                    case "1":
+                                    selectedMachine.ActivateMachine(true);
+                                    break;
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                
+                                {
+                                    Console.Clear();
+                                    Console.WriteLine("\tSelect Mission");
+                                    Console.WriteLine("\t[1]Eliminate target");
+                                    Console.WriteLine("\t[2]Save target");
+                                    Console.WriteLine("\t[3]Make Coffee");
+                                    Console.WriteLine("\t[4]Quit");
+                                    string missionSelect = Console.ReadLine();
+                                    switch (missionSelect)
+                                    {
+                                        case "1":
                                         {
                                             Console.Clear();
                                             Console.WriteLine("\tSelect your target:");
@@ -67,9 +88,10 @@ namespace T_800.Domain
                                             {
                                                 Console.WriteLine("Please select targets 1-3.");
                                             }
+
                                             break;
                                         }
-                                    case "2":
+                                        case "2":
                                         {
                                             Console.Clear();
                                             Console.WriteLine("\tWho do you want to save?:");
@@ -113,42 +135,59 @@ namespace T_800.Domain
                                         Console.WriteLine("\t[3]Coffee with milk.");
                                         Console.WriteLine("\t[4]Coffee with sugar and milk.");
                                         string save = Console.ReadLine();
+                                            break;
+                                        }
+                                        case "3":
+                                        {
+                                            Console.Clear();
+                                            Console.WriteLine("\tHow do you want your coffee?:");
+                                            Console.WriteLine("\t[1]Regular Coffee");
+                                            Console.WriteLine("\t[2]Coffee with sugar");
+                                            Console.WriteLine("\t[3]Coffee with milk");
+                                            Console.WriteLine("\t[4]Coffee with sugar and milk");
+                                            string save = Console.ReadLine();
 
-                                        if (save == "1")
-                                        {
-                                            Console.WriteLine("Regular Coffee coming up!");
-                                            Console.ReadKey();
-                                            break;
-                                        }
-                                        if (save == "2")
-                                        {
-                                            Console.WriteLine("Coffee with sugar coming up!");
-                                            Console.ReadKey();
-                                            break;
-                                        }
-                                        if (save == "3")
-                                        {
-                                            Console.WriteLine("Coffee with milk coming up!");
-                                            Console.ReadKey();
+                                            if (save == "1")
+                                            {
+                                                Console.WriteLine("Regular Coffee coming up!");
+                                                Console.ReadKey();
                                                 break;
-                                        }
-                                        if (save == "4")
-                                        {
-                                            Console.WriteLine("Coffee with milk and sugar coming up!");
-                                            Console.ReadKey();
-                                        }
-                                        else
-                                        {
-                                            Console.WriteLine("Please select targets 1-4.");
-                                            Console.ReadKey();
-                                        }
+                                            }
+
+                                            if (save == "2")
+                                            {
+                                                Console.WriteLine("Coffee with sugar coming up!");
+                                                Console.ReadKey();
+                                                break;
+                                            }
+
+                                            if (save == "3")
+                                            {
+                                                Console.WriteLine("Coffee with milk coming up!");
+                                                Console.ReadKey();
+                                                break;
+                                            }
+
+                                            if (save == "4")
+                                            {
+                                                Console.WriteLine("Coffee with milk and sugar coming up!");
+                                                Console.ReadKey();
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("Please select targets 1-4");
+                                                Console.ReadKey();
+                                            }
+
                                             break;
-                                    }
-                                    case "4":
-                                    {
-                                        Console.Clear();
-                                        missionMenu = false;
-                                        break;
+                                        }
+                                        case "4":
+                                        {
+
+                                            Console.Clear();
+                                            missionMenu = false;
+                                            break;
+                                        }
                                     }
                                 }
                             }
