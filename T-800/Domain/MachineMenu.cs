@@ -150,9 +150,10 @@ namespace T_800.Domain
                                 machineList.machines.RemoveAt(selected - 1);
                             }
                             else
-                            {
-                            }                                                                                                                    
+                            {                                
+                            }                             
                             Console.Clear();
+                            menu = false;
                             break;                            
                         }
                     case "3":
