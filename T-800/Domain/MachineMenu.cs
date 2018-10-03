@@ -126,17 +126,6 @@ namespace T_800.Domain
                                             }
                                             break;
                                         }
-                                    case "3":
-                                    {
-                                        Console.Clear();
-                                        Console.WriteLine("\tHow do you want your coffee?:");
-                                        Console.WriteLine("\t[1]Regular Coffee.");
-                                        Console.WriteLine("\t[2]Coffee with sugar.");
-                                        Console.WriteLine("\t[3]Coffee with milk.");
-                                        Console.WriteLine("\t[4]Coffee with sugar and milk.");
-                                        string save = Console.ReadLine();
-                                            break;
-                                        }
                                         case "3":
                                         {
                                             Console.Clear();
@@ -149,6 +138,7 @@ namespace T_800.Domain
 
                                             if (save == "1")
                                             {
+                                                Console.Clear();
                                                 Console.WriteLine("Regular Coffee coming up!");
                                                 Console.ReadKey();
                                                 break;
@@ -156,6 +146,7 @@ namespace T_800.Domain
 
                                             if (save == "2")
                                             {
+                                                Console.Clear();
                                                 Console.WriteLine("Coffee with sugar coming up!");
                                                 Console.ReadKey();
                                                 break;
@@ -163,6 +154,7 @@ namespace T_800.Domain
 
                                             if (save == "3")
                                             {
+                                                Console.Clear();
                                                 Console.WriteLine("Coffee with milk coming up!");
                                                 Console.ReadKey();
                                                 break;
@@ -170,6 +162,7 @@ namespace T_800.Domain
 
                                             if (save == "4")
                                             {
+                                                Console.Clear();
                                                 Console.WriteLine("Coffee with milk and sugar coming up!");
                                                 Console.ReadKey();
                                             }
