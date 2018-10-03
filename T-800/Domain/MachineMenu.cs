@@ -39,25 +39,33 @@ namespace T_800.Domain
                                         {
                                             Console.Clear();
                                             Console.WriteLine("\tSelect your target:");
-                                            Console.WriteLine("\t[1]Sarah Connor");
-                                            Console.WriteLine("\t[2]John Connor");
-                                            Console.WriteLine("\t[3]Innocent civilian");
+                                            Console.WriteLine("\t[1]Sarah Connor.");
+                                            Console.WriteLine("\t[2]John Connor.");
+                                            Console.WriteLine("\t[3]Innocent civilian.");
                                             string target = Console.ReadLine();
+                                            Console.Clear();
                                             if (target == "1")
                                             {
                                                 Console.WriteLine("Target aquired, advancing on Sarah Connor.");
+                                                Console.ReadKey();
+                                                break;
                                             }
+                                            Console.Clear();
                                             if (target == "2")
                                             {
                                                 Console.WriteLine("Target aquired, advancing on John Connor.");
+                                                Console.ReadKey();
+                                                break;
                                             }
+                                            Console.Clear();
                                             if (target == "3")
                                             {
                                                 Console.WriteLine("Harming innocent civilians is prohibited.");
+                                                Console.ReadKey();
                                             }
                                             else
                                             {
-                                                Console.WriteLine("Please select targets 1-3");
+                                                Console.WriteLine("Please select targets 1-3.");
                                             }
                                             break;
                                         }
@@ -65,25 +73,34 @@ namespace T_800.Domain
                                         {
                                             Console.Clear();
                                             Console.WriteLine("\tWho do you want to save?:");
-                                            Console.WriteLine("\t[1]Sarah Connor");
-                                            Console.WriteLine("\t[2]John Connor");
-                                            Console.WriteLine("\t[3]Lasse på ica");
+                                            Console.WriteLine("\t[1]Sarah Connor.");
+                                            Console.WriteLine("\t[2]John Connor.");
+                                            Console.WriteLine("\t[3]Lasse på ica.");
                                             string save = Console.ReadLine();
+                                            Console.Clear();
                                             if (save == "1")
                                             {
-                                                Console.WriteLine("Target aquired, attempting to save Sarah Connor");
+                                                Console.WriteLine("Target aquired, attempting to save Sarah Connor.");
+                                                Console.ReadKey();
+                                                break;
                                             }
+                                            Console.Clear();
                                             if (save == "2")
                                             {
-                                                Console.WriteLine("Target aquired, attempting to save John Connor");
+                                                Console.WriteLine("Target aquired, attempting to save John Connor.");
+                                                Console.ReadKey();
+                                                break;
                                             }
+                                            Console.Clear();
                                             if (save == "3")
                                             {
-                                                Console.WriteLine("Attempting to save Lasse");
+                                                Console.WriteLine("Attempting to save Lasse.");
+                                                Console.ReadKey();
+                                                
                                             }
                                             else
                                             {
-                                                Console.WriteLine("Please select targets 1-3");
+                                                Console.WriteLine("Please select targets 1-3.");
                                             }
                                             break;
                                         }
@@ -91,10 +108,10 @@ namespace T_800.Domain
                                     {
                                         Console.Clear();
                                         Console.WriteLine("\tHow do you want your coffee?:");
-                                        Console.WriteLine("\t[1]Regular Coffee");
-                                        Console.WriteLine("\t[2]Coffee with sugar");
-                                        Console.WriteLine("\t[3]Coffee with milk");
-                                        Console.WriteLine("\t[4]Coffee with sugar and milk");
+                                        Console.WriteLine("\t[1]Regular Coffee.");
+                                        Console.WriteLine("\t[2]Coffee with sugar.");
+                                        Console.WriteLine("\t[3]Coffee with milk.");
+                                        Console.WriteLine("\t[4]Coffee with sugar and milk.");
                                         string save = Console.ReadLine();
 
                                         if (save == "1")
@@ -122,7 +139,7 @@ namespace T_800.Domain
                                         }
                                         else
                                         {
-                                            Console.WriteLine("Please select targets 1-4");
+                                            Console.WriteLine("Please select targets 1-4.");
                                             Console.ReadKey();
                                         }
                                             break;
